@@ -22,4 +22,4 @@ Because only necessary content is loaded from the server, your website will alre
 ## What about SEO?
 Each time a link is clicked, HTML5 pushstate will update the URL, the page title and meta tags to the information that belongs on the page. If you are using Google Analytics, just put your tracking code in the theme settings to register a new pageview for every AJAX request.
 ## Are old browsers supported?
-Yes! Fancylinks uses the History.js library from Balupton to bring you HTML5 pushstate functionality and fallbacks for older browsers, and because it is built on top of a normal WordPress templates, browsers with JavaScript disabled can still access your site. You can even use it on your GameBoy!
+Yes! Fancylinks uses the History.js library from Balupton to bring you HTML5 pushstate functionality and fallbacks for older browsers, and because it is built on top of a normal WordPress templates, browsers with JavaScript disabled can still access your site. You can even use it on your Game Boy!
