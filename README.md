@@ -26,4 +26,4 @@ Yes! Fancylinks uses the History.js library from Balupton to bring you HTML5 pus
 ## But wait, what's the best feature of this?
 You get all the great things about WordPress (easy to use admin interface, a library of plugins, the largest community of developers) and none of its faults, giving you a fast, modern website for the new millenium and beyond.
 ## This is too good to be true! I must see this with my own eyes!!
-Ok, man, go here: (http://aklosismedia.com/quotes/stories)[http://aklosismedia.com/quotes/stories]
+Ok, man, go here: [http://aklosismedia.com/quotes/stories](http://aklosismedia.com/quotes/stories)
