@@ -43,13 +43,15 @@ jQuery(function () {
 
         if (useCache) {
             jQuery('#content').replaceWith(cache);
-            var used = unescape(encodeURIComponent(JSON.stringify(localStorage))).length;
+            var used = unescape(encodeURIComponent(JSON.stringify(localStorage))).length / 1000;
             console.log('expiration in ' + ((exp - now) / 1000) + ' seconds... AAA!');
-            console.log('remaining space (bytes): ' + (1024 * 1024 * 5 - used));
-            console.log('used space (bytes): ' + used);
+            // console.log('remaining space (kb): ' + (1.024 * 1024 * 5 - used));
+            console.log('used space (kb): ' + used);
         } else {
             jQuery('#content').empty();
-            jQuery.get( state.url + '?partial #content', function (data) {
+            var end = state.url.slice(localize.home.length);
+            var url = localize.home + '/partials' + end;
+            jQuery.get(url + ' #content', function (data) {
                 jQuery('#content').replaceWith(data);
                 localStorage[state.url] = data;
                 localStorage[state.url + 'exp'] = now + 86400000; // expires after 24 hrs.

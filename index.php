@@ -1,6 +1,8 @@
 <?php
-if (isset($_REQUEST['partial'])) {
-    return get_template_part('templates/content', 'index');
+
+$partial = get_query_var('partial');
+if ($partial) {
+    return get_template_part('templates/content', $partial);
 }
 
 get_header();
